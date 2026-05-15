@@ -1,6 +1,6 @@
 ---
 title: "Ssuis_Zoonotic_Predict：基于机器学习的猪链球菌人畜共患风险预测工具"
-excerpt: "深入解析 Ssuis_Zoonotic_Predict 的技术架构——从基因存在/缺失矩阵构建、Scoary+LASSO+XGBoost多策略特征筛选，到随机森林模型训练与 StratifiedKFold 交叉验证，全面覆盖命令行工具的工程化实现细节。"
+excerpt: "  深入解析 Ssuis_Zoonotic_Predict 的技术架构——从基因存在/缺失矩阵构建、Scoary+LASSO+XGBoost多策略特征筛选，到随机森林模型训练与 StratifiedKFold 交叉验证，全面覆盖命令行工具的工程化实现细节。"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2026-05-14T08:00:00.000Z"
 author:

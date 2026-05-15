@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-relaxed text-morandi-ink;
 }
 
 .markdown p,
@@ -10,9 +10,57 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply font-warm text-3xl mt-14 mb-4 leading-snug text-morandi-ink font-bold tracking-tight;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply font-warm text-2xl mt-10 mb-4 leading-snug text-morandi-ink font-semibold tracking-tight;
+}
+
+.markdown a {
+  @apply text-morandi-sage-deep underline decoration-morandi-sage-wash decoration-2 underline-offset-2 hover:text-morandi-sage transition-colors duration-200;
+}
+
+.markdown code {
+  @apply bg-morandi-paper text-morandi-ink px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.markdown pre {
+  @apply bg-morandi-ink text-morandi-paper rounded-gentle p-5 overflow-x-auto my-6;
+}
+
+.markdown pre code {
+  @apply bg-transparent text-morandi-paper p-0;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-morandi-sage-wash pl-5 italic text-morandi-ink-light;
+}
+
+.markdown table {
+  @apply w-full border-collapse my-6;
+}
+
+.markdown th {
+  @apply bg-morandi-paper text-morandi-ink font-semibold text-left p-3 border-b border-morandi-card-border;
+}
+
+.markdown td {
+  @apply p-3 border-b border-morandi-card-border text-morandi-ink-light;
+}
+
+.markdown ul {
+  @apply list-disc list-inside;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside;
+}
+
+.markdown strong {
+  @apply text-morandi-ink font-bold;
+}
+
+.markdown hr {
+  @apply border-morandi-card-border my-10;
 }

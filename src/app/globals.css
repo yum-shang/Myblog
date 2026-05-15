@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Morandi Watercolor Canvas */
+@layer base {
+  html {
+    background-color: #F5F3F0;
+  }
+  body {
+    color: #3D3A38;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: #D4C2B4;
+    color: #3D3A38;
+  }
+}
+
+/* Glassmorphism + Card utilities */
+@layer utilities {
+  .glass {
+    background: rgba(240, 238, 235, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(220, 216, 211, 0.5);
+  }
+  .glass-hover:hover {
+    background: rgba(232, 229, 225, 0.75);
+    border-color: rgba(200, 196, 190, 0.6);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Watercolor texture background */
+@layer components {
+  .canvas-bg {
+    background:
+      linear-gradient(
+        175deg,
+        #F2F0ED 0%,
+        #F6F4F1 30%,
+        #F0EEEB 60%,
+        #F4F2EF 100%
+      );
+  }
+  .card-layered {
+    @apply bg-morandi-card border border-morandi-card-border rounded-gentle shadow-card transition-all duration-300;
+  }
+  .card-layered:hover {
+    @apply shadow-card-hover bg-morandi-card-hover;
+    transform: translateY(-2px);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F3F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5D3CA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B9F93;
+}

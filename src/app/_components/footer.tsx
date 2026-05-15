@@ -15,31 +15,33 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
+    <footer className="bg-morandi-paper border-t border-morandi-card-border">
       <Container>
-        <div className="py-16 flex flex-col items-center">
-          <div className="flex items-center justify-center gap-8 mb-4">
+        <div className="py-12 flex flex-col items-center">
+          <div className="flex items-center justify-center gap-10 mb-4">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors duration-200"
+                className="flex flex-col items-center gap-2 text-morandi-ink-light hover:text-morandi-sage-deep transition-colors duration-200"
               >
-                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-200 dark:bg-slate-700 hover:bg-neutral-300 dark:hover:bg-slate-600 transition-colors duration-200">
+                <span className="w-9 h-9 flex items-center justify-center rounded-full bg-morandi-card border border-morandi-card-border hover:border-morandi-sage-wash hover:bg-morandi-card-hover transition-all duration-200">
                   <img
                     src={link.icon}
                     alt={link.name}
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                   />
                 </span>
-                <span className="text-sm font-medium">{link.name}</span>
+                <span className="text-xs font-medium tracking-wide">
+                  {link.name}
+                </span>
               </a>
             ))}
           </div>
-          <p className="text-sm text-neutral-400 dark:text-neutral-500 mt-4">
-            © {new Date().getFullYear()}  瑶. All rights reserved.
+          <p className="text-xs text-morandi-ink-muted mt-4 tracking-wide">
+            © {new Date().getFullYear()} 瑶. All rights reserved.
           </p>
         </div>
       </Container>
